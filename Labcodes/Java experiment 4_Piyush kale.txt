@@ -1,0 +1,66 @@
+//Constructor overloading//
+package javaapplication64;
+class addition {
+int a,b,sum;
+double sum1;
+addition(int a,int b){
+sum = a+b;
+System.out.println("Addition :"+sum);
+}
+addition(double a, double b){
+sum1 = a+b;
+System.out.println("Float addition:"+sum1);
+}
+}
+
+public class JavaApplication64 {
+
+    public static void main(String[] args) {
+    addition add1 = new addition(10.5,11.5);
+    addition add2 = new addition(10,11);
+    }
+    
+}
+output:
+run:
+Float addition:22.0
+Addition :21
+BUILD SUCCESSFUL (total time: 0 seconds)
+
+
+
+
+//Method Overloading//
+
+
+package javaapplication63;
+class addition{
+int a,b,Sum ;
+double Sum1;
+ void add(int a,int b){
+Sum = a+b;
+     System.out.println("Addition :"+Sum);
+
+}
+ void add(double a,double b){
+ Sum1 = a+b;
+ System.out.println("Float addition :"+ Sum1);
+ }
+}
+
+
+public class JavaApplication63 {
+
+    
+    public static void main(String[] args) {
+        addition add1 = new addition();
+        add1.add(11, 12);
+        add1.add(11.5, 12.5);
+    }
+    
+}
+output:
+run:
+Addition :23
+Float addition :24.0
+BUILD SUCCESSFUL (total time: 0 seconds)
